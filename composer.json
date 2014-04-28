@@ -1,0 +1,22 @@
+{
+    "name": "harrytang/yii2-jeditable",
+    "description": "Jquery Editable for Yii 2",
+    "keywords": ["yii", "extension", "jeditable"],
+    "homepage": "https://github.com/harrytang/yii2-jeditable",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Harry Tang",
+            "email": "giaduy@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "harrytang\\jeditable\\": ""
+        }
+    }    
+}
