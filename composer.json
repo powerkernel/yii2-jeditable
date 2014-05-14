@@ -18,5 +18,6 @@
         "psr-4": {
             "harrytang\\jeditable\\": ""
         }
-    }    
+    },
+    "minimum-stability": "dev"
 }
