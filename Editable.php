@@ -9,12 +9,16 @@
 namespace harrytang\jeditable;
 
 use yii\base\Widget;
+use yii\helpers\Json;
+use yii\web\View;
 
 class Editable extends Widget
 {
 
-    public $selector = '';
+    public $selector = '.editable';
+    public $saveUrl = '#';
     public $options = [];
+    public $pjax = false;
 
     /**
      * @inheritdoc
@@ -39,10 +43,13 @@ class Editable extends Widget
      */
     protected function registerJS()
     {
-        //$options = CJavaScript::encode($this->options);
-        //$options = Json::encode($this->options);
-        //$script = '$("' . $this->selector . '").dotdotdot(' . $options . ');';
-        //$this->view->registerJs($script, View::POS_READY, __CLASS__ . $this->selector);
+        $options = Json::encode($this->options);
+        $script = '$("' . $this->selector . '").on().editable("' . $this->saveUrl . '", ' . $options . ');';
+        if($this->pjax===true)
+        {
+            $script.='$(document).on("pjax:complete", function() {'.$script.'});';
+        }
+        $this->view->registerJs($script, View::POS_READY, __CLASS__ . $this->selector);
     }
 
 } 
