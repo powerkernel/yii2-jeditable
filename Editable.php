@@ -1,9 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Harry
- * Date: 4/26/14
- * Time: 2:20 PM
+ * @link http://www.greyneuron.com/
+ * @copyright Copyright (c) 2014 Grey Neuron
  */
 
 namespace harrytang\jeditable;
