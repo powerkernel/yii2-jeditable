@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist harrytang/yii2-jeditable "*"
+php composer.phar require --prefer-dist modernkernel/yii2-jeditable "*"
 ```
 
 or add
 
 ```json
-"harrytang/yii2-jeditable": "*"
+"modernkernel/yii2-jeditable": "*"
 ```
 
 to the `require` section of your composer.json.
