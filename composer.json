@@ -1,8 +1,8 @@
 {
-    "name": "harrytang/yii2-jeditable",
+    "name": "modernkernel/yii2-jeditable",
     "description": "Jquery Editable for Yii 2",
     "keywords": ["yii", "extension", "jeditable"],
-    "homepage": "https://github.com/harrytang/yii2-jeditable",
+    "homepage": "https://github.com/modernkernel/yii2-jeditable",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "harrytang\\jeditable\\": ""
+            "modernkernel\\jeditable\\": ""
         }
     },
     "minimum-stability": "dev"
