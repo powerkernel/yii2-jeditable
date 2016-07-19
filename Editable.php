@@ -1,10 +1,10 @@
 <?php
 /**
- * @link http://www.greyneuron.com/
+ * @link https://modernkernel.com/
  * @copyright Copyright (c) 2014 Grey Neuron
  */
 
-namespace harrytang\jeditable;
+namespace modernkernel\jeditable;
 
 use yii\base\Widget;
 use yii\helpers\Json;
