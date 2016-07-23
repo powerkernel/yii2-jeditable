@@ -1,7 +1,7 @@
 yii2-jeditable
 ==============
 
-JQuery Editable Plugin For Yii 2.x
+JQuery Editable extension For Yii 2
 
 Installation
 ------------
@@ -16,11 +16,26 @@ php composer.phar require --prefer-dist modernkernel/yii2-jeditable "*"
 
 or add
 
-```json
+```
 "modernkernel/yii2-jeditable": "*"
 ```
 
 to the `require` section of your composer.json.
 
-Quick start
------------
+Usage
+-----
+
+Once the extension is installed, simply use it in your code by  :
+
+```php
+<?=
+    \modernkernel\jeditable\Editable::widget([
+        'content' => 'Editable content here',
+        'saveUrl'=>Yii::$app->urlManager->createUrl(['#save-url']),
+        'clientOptions'=>[
+            'tooltip'=>'click to edit',
+            'indicator'=>'saving...'
+        ]
+    ]);
+?>
+```
