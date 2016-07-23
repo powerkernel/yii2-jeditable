@@ -1,15 +1,20 @@
 <?php
 /**
- * @link http://www.greyneuron.com/
- * @copyright Copyright (c) 2014 Grey Neuron
+ * @author Harry Tang <harry@modernkernel.com>
+ * @link https://modernkernel.com
+ * @copyright Copyright (c) 2016 Modern Kernel
  */
 
-namespace harrytang\jeditable;
+namespace modernkernel\jeditable;
 
 use yii\base\Widget;
 use yii\helpers\Json;
 use yii\web\View;
 
+/**
+ * Class Editable
+ * @package modernkernel\jeditable
+ */
 class Editable extends Widget
 {
 
@@ -33,7 +38,7 @@ class Editable extends Widget
     protected function registerPlugin()
     {
         $view = $this->getView();
-        Asset::register($view);
+        JeditableAsset::register($view);
     }
 
     /**
@@ -43,9 +48,8 @@ class Editable extends Widget
     {
         $options = Json::encode($this->options);
         $script = '$("' . $this->selector . '").on().editable("' . $this->saveUrl . '", ' . $options . ');';
-        if($this->pjax===true)
-        {
-            $script.='$(document).on("pjax:complete", function() {'.$script.'});';
+        if ($this->pjax === true) {
+            $script .= '$(document).on("pjax:complete", function() {' . $script . '});';
         }
         $this->view->registerJs($script, View::POS_READY, __CLASS__ . $this->selector);
     }
