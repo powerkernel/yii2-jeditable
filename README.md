@@ -21,3 +21,21 @@ or add
 ```
 
 to the `require` section of your composer.json.
+
+Usage
+-----
+
+Once the extension is installed, simply use it in your code by  :
+
+```php
+<?=
+    \modernkernel\jeditable\Editable::widget([
+        'content' => 'Editable content here',
+        'saveUrl'=>Yii::$app->urlManager->createUrl(['#save-url']),
+        'clientOptions'=>[
+            'tooltip'=>'click to edit',
+            'indicator'=>'saving...'
+        ]
+    ]);
+?>
+```
