@@ -30,6 +30,7 @@ class Editable extends Widget
         if (empty($this->options['id'])) {
             $this->options['id'] = $this->getId();
         }
+        $this->id=$this->options['id'];
 
     }
 
@@ -61,7 +62,7 @@ class Editable extends Widget
      */
     protected function registerJS()
     {
-        $clientOptions = !empty($this->clientOptions) ? json_encode($this->clientOptions) : '{}';
+        $clientOptions = !empty($this->clientOptions) ? Json::encode($this->clientOptions) : '{}';
         $id=$this->getId();
         $js='$("#'.$id.'").editable("'.$this->saveUrl.'", '.$clientOptions.');';
 
