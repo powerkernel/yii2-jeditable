@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
 
 /**
  * Class Asset
- * @package modernkernel\jeditable
+ * @package powerkernel\jeditable
  */
 class JeditableAsset extends AssetBundle
 {
