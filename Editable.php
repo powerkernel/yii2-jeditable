@@ -5,7 +5,7 @@
  * @copyright Copyright (c) 2017 Power Kernel
  */
 
-namespace modernkernel\jeditable;
+namespace powerkernel\jeditable;
 
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -13,7 +13,7 @@ use yii\helpers\Json;
 
 /**
  * Class Editable
- * @package modernkernel\jeditable
+ * @package powerkernel\jeditable
  */
 class Editable extends Widget
 {

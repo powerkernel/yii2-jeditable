@@ -5,7 +5,7 @@
  * @copyright Copyright (c) 2017 Power Kernel
  */
 
-namespace modernkernel\jeditable;
+namespace powerkernel\jeditable;
 
 
 use yii\web\AssetBundle;
@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
  */
 class JeditableAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/modernkernel/yii2-jeditable/assets/js';
+    public $sourcePath = '@vendor/powerkernel/yii2-jeditable/assets/js';
     public $js = [
         'jquery.jeditable.js'
     ];
