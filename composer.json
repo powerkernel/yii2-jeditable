@@ -1,12 +1,12 @@
 {
-    "name": "modernkernel/yii2-jeditable",
+    "name": "powerkernel/yii2-jeditable",
     "description": "Jquery Editable extension for Yii 2",
     "keywords": ["yii2", "jeditable"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/modernkernel/yii2-jeditable/issues?state=open",
-        "source": "https://github.com/modernkernel/yii2-jeditable"
+        "issues": "https://github.com/powerkernel/yii2-jeditable/issues?state=open",
+        "source": "https://github.com/powerkernel/yii2-jeditable"
     },
     "authors": [
         {
@@ -15,11 +15,11 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0"
     },
     "autoload": {
         "psr-4": {
-            "modernkernel\\jeditable\\": ""
+            "powerkernel\\jeditable\\": ""
         }
         }
 }
